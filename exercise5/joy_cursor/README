@@ -1,0 +1,38 @@
+Exercise 5: Display and Joystick
+
+Name: Jacob Wong
+CCID: jdw2
+Student ID: 1511712
+
+Accessories:
+- Arduino Mega Board (AMG)
+- USB cable, A-B style
+- Adafruit ILI9341 breakout board
+- SainSmart JoyStick Module
+
+References:
+Used and modified code from joy_cursor from Zac's Google drive (Lec 13- Oct 17)
+
+Assumptions:
+- When moving the cursor to the right side of the screen where the black bar was,
+	the cursor would "remove" one pixel on the black bar with a portion of the map.
+	So to account for this I changed the constrain on the max x-value to be 49 bits
+	to make sure that the cursor did not remove any of the black bar.
+	
+
+Wiring Instructions:
+https://eclass.srv.ualberta.ca/pluginfile.php/3891315/mod_resource/content/1/cmput274-display-wiring.txt
+Instructions to wiring the Adafruit_ILI9341 screen. To wire the joystick, follow
+the given instructions from in-class discussion as well as described on eclass Exercise 5
+
+How to run the Code:
+Load the program into the Arduino and look at the display screen for the Adafruit_ILI9341
+
+Description:
+The purpose of this program is to improve upon the joy_cursor code that was created
+in class. The improvements that were made will ensure that the cursor will not
+leave behind a black trail but rather to show no trail. As well, the code will
+restrain the cursor from going past the edges of the display screen and the black
+bar that we intentionally put on the map. Then, the cursor should vary it's speed
+depending on the amount that the cursor is moved. Finally, the cursor would blink
+when sitting still and this occurrence was taken care of.
