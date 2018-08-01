@@ -1,0 +1,35 @@
+Assignment 1 Part 1: Chat Program
+
+Names: Jacob Wong and Jicheng Zhao
+
+
+Accessories:
+- 2 x Arduino Mega Board (AMG)
+- 2 x USB cables, A-B style
+
+Wiring Instructions:
+- Arduino A TX3 pin <--> Arduino B RX3 pin
+- Arduino B TX3 pin <--> Arduino A RX3 pin
+- Arduino A GND pin <--> Arduino B GND pin
+
+How to run the Code:
+- Make sure both Arduinos are plugged into the computer
+- Make upload to both Arduinos (make upload-0 & make upload-1)
+- Open two terminals and run serial-mon-0 & 1 on the two terminals
+
+References:
+Used and modified code from Zac's google drive (read_t, diffie_hellman, encrypt_decrypt)
+
+Assumptions:
+- User must press enter once they have typed the other user's public key
+- Even though we use 16 bit integers, we used 32 bit integer types to account
+	for overflow
+- Assume that the user will not start chatting until the "You are connected" message
+	prints on both screens
+- Assume the user knows what the Diffie Hellman process is or can Google it
+
+Description:
+This program can be used between two users that want to communicate through
+their personally customized Arduino devices. The program will also encrypt and
+decrypt their messages (character by character) to ensure the privacy of their
+conversation (Using the Diffie Hellman process).
