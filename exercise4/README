@@ -1,0 +1,22 @@
+Exercise 4: String Functions
+
+Name: Jacob Wong
+CCID: jdw2
+Student ID: 1511712
+
+Accessories:
+- Arduino Mega Board (AMG)
+- USB cable, A-B style
+
+References:
+Used and modified code from diffie_hellman from Zac's Google drive
+
+How to run the Code:
+Load the program into the Arduino and open a serial monitor
+
+Description:
+The purpose of this program is to take a string and get the length of
+the string as well as print the given string backwards to the serial monitor.
+We also wanted to test to see that the two functions we created would
+produced the correct results. The functions can be found in the
+string_processing C++ file.
