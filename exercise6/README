@@ -1,0 +1,26 @@
+Exercise 6: Restaurants and Pointers
+
+Name: Jacob Wong
+CCID: jdw2
+Student ID: 1511712
+
+Accessories:
+- Arduino Mega Board (AMG)
+- USB cable, A-B style
+
+References:
+Used and modified code from rest_sd from Zac's Google drive (Lec 14- Oct 19)
+
+Wiring Instructions:
+- Arduino <--> Computer/Laptop
+
+How to run the Code:
+Load the program into the Arduino and open the serial monitor.
+
+Description:
+The purpose of this program is to improve upon the rest_sd code that was given to
+us in class. The improvements that we wanted to make was that the getRestaurant
+function in the code would call a block every iteration. However, because
+accessing the SD card is slow we needed to fix this. So to account for this,
+the getRestaurantFast was made so that the SD card is only accessed
+when the restaurant that is called is not within the restaurant block (8 restaurants in a block).
