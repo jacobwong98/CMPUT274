@@ -1,0 +1,43 @@
+Assignment 2: Restaurant Finder Part 1
+
+Name: Jacob Wong & Jicheng Zhao
+
+
+Accessories:
+- Arduino Mega Board (AMG)
+- USB cable, A-B style
+- Adafruit ILI9341 breakout board
+- SainSmart JoyStick Module
+
+References:
+Used and modified code from joy_cursor, rest_sd, display_names from Zac's drive
+as well as code given in the Assignment description
+
+Wiring Instructions:
+https://eclass.srv.ualberta.ca/pluginfile.php/3891315/mod_resource/content/1/cmput274-display-wiring.txt
+Instructions to wiring the Adafruit_ILI9341 screen. To wire the joystick, follow
+the given instructions from in-class discussion as well as described on eclass Exercise 5
+and convention explained in Assignment Description on eclass.
+
+How to run the Code:
+Upload the code into the Arduino and look at display screen.
+
+Assumptions:
+- Used and modified code from Exercise 5 and 6 submissions instead of solutions provided
+- For mode 1, assumed that the highlighted name should wrap around from top to bottom
+	and bottom to top when the user goes past the bounds of the 30 restaurants.
+
+
+Description:
+This program can be used to find the restaurants around Edmonton within a certain
+distance. This program will contain two modes; mode 0 and mode 1. In mode 0,
+the user can use the joystick to move around the map. Their position will be
+represented by the red cursor shown on the display screen and the display will
+only show a small portion of the Edmonton map but will shift when the cursor hits
+the edge of the display screen. Then if the user clicks the joystick, the program
+will swtiched to mode 1. In mode 1, the screen will display the 30 closest restaurants
+to the location that the cursor is currently at. Then, the user can move up and down
+the list to see which restaurant they want to find. Finally, if the user presses
+the joystick, the program will switch to mode 0 except instead of starting at the middle
+of the Edmonton map, the cursor will be placed on the position of restaurant that
+was selected.
