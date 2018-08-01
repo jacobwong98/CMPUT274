@@ -1,0 +1,20 @@
+Exercise 3: IPv4 Address
+
+Name: Jacob Wong
+CCID: jdw2
+Student ID: 1511712
+
+Accessories:
+- Arduino Mega Board (AMG)
+- USB cable, A-B style
+
+References:
+Used and modified code from read_int from Zac's Google drive
+
+How to run the Code:
+Load the program into the Arduino and open a serial monitor
+
+Description:
+The purpose of this program is to convert any unsigned 32 bit integer that the
+user enters into four 8 bit numbers. These four numbers represent the 4 octets
+that are used to create the IPv4 addresses.

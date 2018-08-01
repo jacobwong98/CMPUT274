@@ -1,0 +1,33 @@
+Exercise 7: Greatest Common Divisor and a Makefile
+
+Name: Jacob Wong
+CCID: jdw2
+Student ID: 1511712
+
+Accessories:
+- None
+
+References:
+Used and modified code from compiling_steps from Zac's Google drive (Lec 19- Nov 7)
+Reference to the Euclid Algorithm on the Exercise 7 description
+
+Wiring Instructions:
+- None
+
+Assumptions:
+- User will enter non-negative numbers
+- At least one of the numbers entered will be positive (i.e. # > 0)
+- Numbers entered will be less than 2^32 - 1
+
+How to run the Code:
+- type "make clean" in the terminal to remove any .o files that may be in directory
+- type "make exercise7" in the terminal
+- type "./exercise7" in the terminal and enter the 2 numbers
+
+Description:
+The purpose of this program is to find the greatest common divisor for two numbers
+entered by the user. The greatest common divisor is the largest number that both numbers
+can be divided by. In order to implement this, the Euclid's algorithm which uses
+recursion to calculate this number. As well, included is a Makefile that was created
+for this program that would compile and link to separate C++ files as well as
+remove the .o files when the user runs a certain command.
