@@ -1,0 +1,45 @@
+Assignment 1: Chat Program Part 2
+
+Name: Jacob Wong & Jicheng Zhao
+
+
+Accessories:
+- Arduino Mega Board (AMG)
+- USB cable, A-B style
+- 560 Ohm Resistor (Green Blue Brown)
+
+References:
+- https://eclass.srv.ualberta.ca/mod/page/view.php?id=2520157
+Used code for rolling cipher and state machine as well as
+guideline on how to format state machine based on diagram
+
+- https://eclass.srv.ualberta.ca/pluginfile.php/3892325/mod_resource/content/2/modular-mult.pdf
+Worksheet for Modular Multiplication as guide for mulMod function
+
+Wiring Instructions:
+- Arduino A TX3 pin <--> Arduino B RX3 pin
+- Arduino B TX3 pin <--> Arduino A RX3 pin
+- Arduino A GND pin <--> Arduino B GND pin
+- Arduino A digital pin 13 <--> Resistor <--> Arduino B 5V pin
+
+How to run the Code:
+- Make sure both Arduinos are plugged into the computer
+- Make upload to both Arduinos (make upload-0 & make upload-1)
+- Open two terminals and run serial-mon-0 & 1 on the two terminals
+
+Assumptions:
+- Modified code from Assignment 1 Part 1
+- Sometimes the client or server terminal would "connect" when opening their
+  serial monitor even though the other serial monitor was not open yet.
+	We assumed to fix this problem was to close both serial monitors
+	and reopen both and the problem should be solved.
+- User knows what Diffie Hellman process, Rolling cipher and State machines are
+
+
+Description:
+This program can be used between two users that want to communicate through
+their personally customized Arduino devices. The program will also encrypt and
+decrypt their messages (character by character) to ensure the privacy of their
+conversation (Using the Diffie Hellman process). This program is also an improvement
+on the previous chat program in that the exchange of the user's keys are done
+automatically and uses an more complicated encryption process.
